@@ -1,0 +1,65 @@
+main{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../pexels-elle-hughes-1660030.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    div.texts{
+        color: #222;
+        padding-left: 15px;
+        width: 40%;
+        min-width: 400px;
+        h1{
+            font-family: 'Kufam', cursive;
+            font-size: 1.5rem;
+            word-spacing: 10px;
+            margin-bottom: 0.2em;
+        }
+        h2{
+            font-family: 'Kufam', cursive;
+            font-size: .8rem;
+            font-weight: 400;
+        }
+        form{
+            margin-top: 2em;
+            input[type='search']{
+                width: 75%;
+                height: 50px;
+                font-size: 0.6rem;
+                padding-left: 10px;
+                &:focus{
+                    border: none;
+                    outline: 4px solid #e13f0970;
+                }
+                &::-moz-placeholder{
+                    background-position: 100% 0;
+                    background-repeat: no-repeat; 
+                    background-image: url("https://image.flaticon.com/icons/svg/875/875136.svg");
+                    filter: opacity(0.7);
+                }
+                &::-webkit-input-placeholder{
+                    background-position: 100% 0;
+                    background-repeat: no-repeat; 
+                    background-image: url("https://image.flaticon.com/icons/svg/875/875136.svg");
+                    filter: opacity(0.7);
+                }
+                &:-ms-input-placeholder{
+                    background-position: 100% 0;
+                    background-repeat: no-repeat; 
+                    background-image: url("https://image.flaticon.com/icons/svg/875/875136.svg");
+                    filter: opacity(0.7);
+                }
+            }
+            input[type='submit']{
+                width: 20%;
+                height: 50px;
+                background-color: #e13f09;
+                border: none;
+                color: white;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
